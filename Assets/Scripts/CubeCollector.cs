@@ -2,7 +2,7 @@
 
 public class CubeCollector : MonoBehaviour
 {
-    /*private GameObject _parentObject;
+    private GameObject _parentObject;
     public static float yPos = 1.03f;
     public static int collectedCubeAmount;
     [SerializeField] private CharacterAnimationController characterAnimCont;
@@ -29,5 +29,5 @@ public class CubeCollector : MonoBehaviour
             yPos += 1.03f;
             collectedCubeAmount++;
         }
-    }*/
+    }
 }
