@@ -2,7 +2,7 @@
 
 public class SeparateCube : MonoBehaviour
 {
-    /*[SerializeField] private CharacterAnimationController characterAnimCont;
+    [SerializeField] private CharacterAnimationController characterAnimCont;
     
     private void Start()
     {
@@ -17,5 +17,5 @@ public class SeparateCube : MonoBehaviour
             CubeCollector.yPos -= 1.03f;
             other.gameObject.transform.SetParent(null);
         }
-    }*/
+    }
 }
