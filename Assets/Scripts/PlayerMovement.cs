@@ -5,17 +5,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject playerContainer;
     [SerializeField] private float speedZ;
     [SerializeField] private float speedX;
-    
     private Vector3 _movementDirection;
-
     private Rigidbody _rigidbody;
-    
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         GetMovementHorizontalInput();
