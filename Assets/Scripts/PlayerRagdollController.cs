@@ -2,7 +2,7 @@
 
 public class PlayerRagdollController : MonoBehaviour
 {
-    /*[SerializeField] private Collider mainCollider;
+    [SerializeField] private Collider mainCollider;
     [SerializeField] private Rigidbody mainRigidbody;
     private Collider[] _colliders;
     private Rigidbody[] _rigidbodies;
@@ -30,5 +30,5 @@ public class PlayerRagdollController : MonoBehaviour
         animator.enabled = !isRagdoll;
         mainCollider.enabled = !isRagdoll;
         mainRigidbody.isKinematic = isRagdoll;
-    }*/
+    }
 }
