@@ -9,6 +9,12 @@ TagManager:
   - Wall
   - ParentCube
   - CollectedCube
+  - GroundObs
+  - DoubleCollectableCube
+  - TripleCollectableCube
+  - TurnRight
+  - TurnLeft
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -22,10 +28,10 @@ TagManager:
   - Obstacle
   - CollectedCube
   - CollectableCube
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Ragdoll
+  - Ground
+  - Win
   - 
   - 
   - 
