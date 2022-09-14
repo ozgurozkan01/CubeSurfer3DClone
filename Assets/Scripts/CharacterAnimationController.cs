@@ -2,7 +2,7 @@
 
 public class CharacterAnimationController : MonoBehaviour
 {
-    /*private Animator _animator;
+    private Animator _animator;
     [HideInInspector] public bool isBouncy;
 
     private void Start()
@@ -38,6 +38,6 @@ public class CharacterAnimationController : MonoBehaviour
     public void DancingAnimation()
     {
         _animator.SetBool("isDancing", true);
-    }*/
+    }
 
 }
