@@ -2,7 +2,7 @@
 
 public class WallSeparateCube : MonoBehaviour
 {
-    /*[SerializeField] private CharacterAnimationController characterAnimCont;
+    [SerializeField] private CharacterAnimationController characterAnimCont;
     [SerializeField] private PlayerMovement _playerMovement;
     [SerializeField] private GameObject character;
     [SerializeField] private GameObject playerContainer;
@@ -41,5 +41,5 @@ public class WallSeparateCube : MonoBehaviour
             _playerMovement.speedZ = 0;
             Debug.Log("extraction Parent");
         }
-    }*/
+    }
 }

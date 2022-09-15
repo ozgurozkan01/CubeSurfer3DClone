@@ -1,11 +1,10 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerTurnTheBend : MonoBehaviour
 {
-    /*[SerializeField] private float lerpMultiplier = 2f;
-    [SerializeField] private bool _isRotatable;
-    private GameObject _collideObject;
+    /*[SerializeField] private bool _isRotatable;
+    [SerializeField] private GameObject parentCube;
+    [SerializeField] private float lerpMultiplier = 1.5f;
 
     private void Update()
     {
@@ -19,21 +18,12 @@ public class PlayerTurnTheBend : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CollectedCube") || other.gameObject.CompareTag("ParentCube"))
         {
-            _collideObject = other.gameObject;
             _isRotatable = true;
         }
     }
 
     private void CollideObjectTurn()
     {
-        if (_collideObject.transform.rotation != Quaternion.Euler(0f, 90f, 0f))
-        {
-            _collideObject.transform.rotation = Quaternion.Slerp(_collideObject.transform.rotation, Quaternion.Euler(0f, -90f, 0f), lerpMultiplier * Time.deltaTime );
-        }
-
-        else
-        {
-            _isRotatable = false;
-        }
+        parentCube.transform.localRotation = Quaternion.Slerp(parentCube.transform.rotation, Quaternion.Euler(0f, -90f, 0f), lerpMultiplier * Time.deltaTime);
     }*/
 }

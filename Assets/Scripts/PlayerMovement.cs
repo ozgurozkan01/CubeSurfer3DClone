@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float speedY;
     private Vector3 _movementDirection;
     private Rigidbody _rigidbody;
+    
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -26,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void PlayerMove(float horizontalDir)
     {
-        playerContainer.transform.Translate(transform.forward * (speedZ * Time.deltaTime));
+        playerContainer.transform.Translate(playerContainer.transform.forward * (speedZ * Time.deltaTime), Space.World);
         _rigidbody.velocity = new Vector3(horizontalDir * speedX * Time.deltaTime, -speedY * Time.deltaTime, 0f);
     }
 }
