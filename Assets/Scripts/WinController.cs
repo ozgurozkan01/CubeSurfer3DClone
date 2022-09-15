@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class WinController : MonoBehaviour
 {
-    /*[SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private CharacterAnimationController characterAnimCont;
     private void OnTriggerEnter(Collider other)
     {
@@ -21,5 +21,5 @@ public class WinController : MonoBehaviour
             playerMovement.speedY = 0;
             playerMovement.speedZ = 0;
         }
-    }*/
+    }
 }
