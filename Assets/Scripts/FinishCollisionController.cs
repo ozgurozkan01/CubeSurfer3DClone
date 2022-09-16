@@ -2,7 +2,7 @@
 
 public class FinishCollisionController : MonoBehaviour
 {
-    /*[SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private CharacterAnimationController characterAnimCont;
     
     private void Start()
@@ -23,5 +23,5 @@ public class FinishCollisionController : MonoBehaviour
             playerMovement.speedY = 0;
             playerMovement.speedZ = 0;
         }
-    }*/
+    }
 }
