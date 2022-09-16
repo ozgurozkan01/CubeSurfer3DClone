@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class WinController : MonoBehaviour
 {
-    /*[SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private CharacterAnimationController characterAnimCont;
 
     private void Start()
@@ -31,5 +31,5 @@ public class WinController : MonoBehaviour
             playerMovement.speedY = 0;
             playerMovement.speedZ = 0;
         }
-    }*/
+    }
 }
