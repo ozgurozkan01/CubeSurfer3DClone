@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GroundObsSeperateCube : MonoBehaviour
 {
-    /*[SerializeField] private CharacterAnimationController characterAnimCont;
+    [SerializeField] private CharacterAnimationController characterAnimCont;
     [SerializeField] private PlayerMovement _playerMovement;
     [SerializeField] private GameObject character;
     [SerializeField] private GameObject playerContainer;
@@ -44,5 +44,5 @@ public class GroundObsSeperateCube : MonoBehaviour
             other.GetComponent<MeshRenderer>().enabled = false;
             other.GetComponent<Collider>().isTrigger = true;
         }
-    }*/
+    }
 }
