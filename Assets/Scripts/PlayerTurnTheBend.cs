@@ -2,7 +2,7 @@
 
 public class PlayerTurnTheBend : MonoBehaviour
 {
-    /*[SerializeField] private bool _isRotatable;
+    [SerializeField] private bool _isRotatable;
     [SerializeField] private GameObject parentCube;
     [SerializeField] private PlayerMovement initialCube;
     [SerializeField] private float lerpMultiplier = 1.5f;
@@ -26,5 +26,5 @@ public class PlayerTurnTheBend : MonoBehaviour
     private void CollideObjectTurn()
     {
         parentCube.transform.localRotation = Quaternion.Slerp(parentCube.transform.rotation, Quaternion.Euler(0f, -90f, 0f), lerpMultiplier * Time.deltaTime);
-    }*/
+    }
 }
