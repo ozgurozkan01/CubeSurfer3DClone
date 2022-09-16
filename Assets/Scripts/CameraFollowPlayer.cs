@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CameraFollowPlayer : MonoBehaviour
 {
-    [SerializeField] private Transform initialCube;
+    /*[SerializeField] private Transform initialCube;
     [SerializeField] private Transform ground;
     private Vector3 offsetInitCube;
     private Vector3 offsetGround;
@@ -32,7 +32,7 @@ public class CameraFollowPlayer : MonoBehaviour
     private void CameraPosYUpdate()
     {
         transform.position = Vector3.Lerp(new Vector3(transform.position.x, transform.position.y, transform.position.z),
-            new Vector3(transform.position.x, initialCube.position.y + (offsetInitCube.y / 2), transform.position.z), lerpMultiplier * Time.deltaTime);
+            new Vector3(transform.position.x, initialCube.position.y + (offsetInitCube.y * 1.5f), transform.position.z), lerpMultiplier * Time.deltaTime);
     }
 
     private void CameraPosZUpdate()
@@ -68,5 +68,5 @@ public class CameraFollowPlayer : MonoBehaviour
                 transform.position = Vector3.Lerp(transform.position, fourthPosition.position, lerpMultiplier * Time.deltaTime);
             }
         }
-    }
+    }*/
 }

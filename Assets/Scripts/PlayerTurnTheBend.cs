@@ -4,6 +4,7 @@ public class PlayerTurnTheBend : MonoBehaviour
 {
     /*[SerializeField] private bool _isRotatable;
     [SerializeField] private GameObject parentCube;
+    [SerializeField] private PlayerMovement initialCube;
     [SerializeField] private float lerpMultiplier = 1.5f;
 
     private void Update()

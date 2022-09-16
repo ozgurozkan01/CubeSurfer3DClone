@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GroundObsSeperateCube : MonoBehaviour
 {
-    [SerializeField] private CharacterAnimationController characterAnimCont;
+    /*[SerializeField] private CharacterAnimationController characterAnimCont;
     [SerializeField] private PlayerMovement _playerMovement;
     [SerializeField] private GameObject character;
     [SerializeField] private GameObject playerContainer;
@@ -29,6 +29,7 @@ public class GroundObsSeperateCube : MonoBehaviour
             CubeCollector.yPos -= 1.03f;
             other.gameObject.transform.SetParent(null);
             CubeCollector.collectedCubeAmount--; 
+            Destroy(other.gameObject);
         }
         
         // Game Over
@@ -40,7 +41,8 @@ public class GroundObsSeperateCube : MonoBehaviour
             _playerMovement.speedX = 0;
             _playerMovement.speedY = 0;
             _playerMovement.speedZ = 0;
-            Destroy(other.gameObject);
+            other.GetComponent<MeshRenderer>().enabled = false;
+            other.GetComponent<Collider>().isTrigger = true;
         }
-    }
+    }*/
 }

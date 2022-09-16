@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,27 +8,33 @@ public class PlayerMovement : MonoBehaviour
     public float speedX;
     public float speedY;
     private Vector3 _movementDirection;
-    private Rigidbody _rigidbody;
+    [HideInInspector] public Rigidbody _rigidbody;
+    private float directionHorizontal;
+    private Vector3 _localVelocity;
     
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _rigidbody.velocity = transform.InverseTransformDirection(_rigidbody.velocity);
     }
 
     void Update()
     {
-        GetMovementHorizontalInput();
+        PlayerContainerMove();
     }
 
-    private void GetMovementHorizontalInput()
-    { 
-        float directionHorizontal = Input.GetAxis("Horizontal");
-        PlayerMove(directionHorizontal);
+    private void FixedUpdate()
+    {
+        PlayerMove();
     }
 
-    private void PlayerMove(float horizontalDir)
+    private void PlayerContainerMove()
     {
         playerContainer.transform.Translate(playerContainer.transform.forward * (speedZ * Time.deltaTime), Space.World);
-        _rigidbody.velocity = new Vector3(horizontalDir * speedX * Time.deltaTime, -speedY * Time.deltaTime, 0f);
+    }
+    
+    private void PlayerMove()
+    {
+        _rigidbody.velocity = (transform.right * (Input.GetAxis("Horizontal") * speedX) + transform.up * speedY) * Time.deltaTime ;
     }
 }
